@@ -3,10 +3,273 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Page</title>
+    <title>koalex</title>
+    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐨</text></svg>">
+    <style>
+        html, body, p {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .selected {
+            color:red;
+            text-decoration: none;
+            cursor: default;
+        }
+
+        .box {
+            width: 100%;
+            border: 1px rgb(240, 240, 240) solid;
+            box-shadow: 0px 0px 7px 1px rgb(247, 247, 247);
+        }
+
+        .box-description {
+            margin: 20px 0px 10px 0px;
+            font-size: 15px;
+        }
+
+        .secondary-link {
+            color: gray;
+        }
+    </style>
 </head>
-<body>
-    <h1>This will be my personal page</h1>
-    
+<body style="display: flex; justify-content: center;">
+<div style="height: 100vh; width: 45vw;">
+    <div style="margin: 40px 20px;">
+        <strong style="font-size: large;">Alex</strong> <!--professional graphics designer. Rate: 1000$/hour-->
+        <div style="display: flex; justify-content: space-between; width: 100%; font-size: small;">
+            <p style="font-size: small;">computer science engineer</p>
+            <p>Last edited: Aug 5, 2024</p>
+        </div>
+    </div>
+    <div style="margin: 0px 20px;">
+        <a href="./blog.html">blog</a>
+        <a href="" class="selected" disabled="disabled" style="margin: 0px 0px 0px 20px;">projects</a>
+        <a href="https://github.com/alexgf0" style="margin: 0px 0px 0px 20px;">github</a>
+    </div>
+    <hr>
+    <div style="width: 100%; height: 100vh; display: flex; flex-direction: column; align-items: center; margin-top: 20px; gap: 10px;">
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong>Rentable</strong>
+                    <p style="font-size:small;">May, 2024</p>
+                </div>
+
+                <p class="box-description">managerial web-app for car rental business.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                            <a href="https://www.rust-lang.org/es" class="secondary-link">rust</a> backend
+                            <ul style="margin:0px;">
+                                <li><a href="https://docs.rs/axum/latest/axum/" class="secondary-link">axum</a></li>
+                                <li><a href="https://docs.rs/sqlx/latest/sqlx/" class="secondary-link">sqlx</a></li>
+                                <li><a href="https://docs.rs/log/latest/log/" class="secondary-link">log</a> &
+                                    <a href="https://docs.rs/log4rs/latest/log4rs/" class="secondary-link">log4rs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            database 
+                            <ul>
+                                <li><a href="https://www.postgresql.org/" class="secondary-link">postgresql</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            frontend
+                            <ul>
+                                <li>
+                                    <a href="https://tailwindcss.com/" class="secondary-link">tailwindcss</a>
+                                </li>
+                                <li>
+                                    <a href="https://www.typescriptlang.org/" class="secondary-link">typescript</a>
+                                </li>
+                                <li>
+                                    <a href="https://es.react.dev/" class="secondary-link">react</a>
+                                </li>
+                                <li>
+                                    <a href="https://nextjs.org/" class="secondary-link">nextjs</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://github.com/alexgf0/oauth">OAuth2 tutorial</a></strong>
+                    <p style="font-size:small;">Oct, 2023</p>
+                </div>
+
+                <p class="box-description">implementation of OAuth2 without using libraries, well documented.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                           <a href="https://www.rust-lang.org/es" class="secondary-link">rust</a>
+                        </li>
+                        <li>
+                            <a href="https://actix.rs/" class="secondary-link">actix web</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://github.com/alexgf0/lbp">Local Binary Patterns</a></strong>
+                    <p style="font-size:small;">Jul, 2023</p>
+                </div>
+
+                <p class="box-description">implementation of the local binary pattern descriptor in Julia.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                           <a href="https://julialang.org/" class="secondary-link">julia</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/alexgf0/lbp?tab=readme-ov-file#dependencies" class="secondary-link">julia modules</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://studee.tv">Studee</a></strong>
+                    <p style="font-size:small;">Jun, 2023</p>
+                </div>
+
+                <p class="box-description">web-app for time tracking including tasks, statistics, friendship requests and more.</p>
+
+                <div style="margin: 10px 0px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                            <a href="https://www.rust-lang.org/es" class="secondary-link">rust</a> backend
+                            <ul style="margin:0px;">
+                                <li><a href="https://actix.rs/" class="secondary-link">actix web</a></li>
+                                <li><a href="https://docs.rs/sqlx/latest/sqlx/" class="secondary-link">sqlx</a></li>
+                                <li><a href="https://docs.rs/log/latest/log/" class="secondary-link">log</a> &
+                                     <a href="https://docs.rs/log4rs/latest/log4rs/" class="secondary-link">log4rs</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            database 
+                            <ul>
+                                <li><a href="https://www.postgresql.org/" class="secondary-link">postgresql</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            frontend
+                            <ul>
+                                <li>
+                                    <a href="https://tailwindcss.com/" class="secondary-link">tailwindcss</a>
+                                </li>
+                                <li>
+                                    <p>javascript</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://github.com/alexgf0/chess">Chess Game</a></strong>
+                    <p style="font-size:small;">Jul, 2022</p>
+                </div>
+
+                <p class="box-description">chess implementation with GUI.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                           <a href="https://www.python.org/" class="secondary-link">python</a>
+                        </li>
+                        <li>
+                            <a href="https://www.pygame.org/news" class="secondary-link">pygame</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://github.com/alexgf0/snake">Terminal Snake Game</a></strong>
+                    <p style="font-size:small;">Jul, 2022</p>
+                </div>
+
+                <p class="box-description">simple snake terminal game with escape characters.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                            C
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://github.com/alexgf0/quick-maths">quick-maths</a></strong> 
+                    <p style="font-size:small;">Jun, 2021</p>
+                </div>
+
+                <p class="box-description">mental calculus terminal game.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                            <a href="https://www.python.org/" class="secondary-link">python</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="box">
+            <div style="margin: 10px 30px;">
+                <div style="display: flex; justify-content: space-between; align-items: center;">
+                    <strong><a href="https://github.com/alexgf0/pawnStorm">pawnStorm</a></strong>
+                    <p style="font-size:small;">Sep, 2020</p>
+                </div>
+
+                <p class="box-description">silly terminal game to move pawns.</p>
+
+                <div style="margin-top: 10px; line-height: 17px;">
+                    <p style="margin: 0px;">tech stack:</p>
+                    <ul style="margin: 0px;">
+                        <li>
+                            <a href="https://www.java.com/es/" class="secondary-link">Java</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
